@@ -1,0 +1,29 @@
+<h1>Calculo de interés Simple</h1>
+
+<form action="/" method="POST">
+  <input type="number" 
+    required="true"
+    name="capital"
+    placeholder="Capital en Pesos"
+    value="{{capital}}"
+    >
+    <input 
+    type="number" 
+    required="true"
+    name="anualInterest"
+    placeholder="Interés Anual"
+    value="{{anualInterest}}"
+    >
+    <input 
+    type="number" 
+    required="true"
+    name="years"
+    placeholder="Número de Años"
+    value="{{years}}"
+    >
+    <button type="submit">Calcular Interés Simple</button>
+
+    {{#if average}}
+    <p>Su interés simple es de ${{average}} totales en un largo de {{years}} años.</p>
+    {{/if}}
+</form>
